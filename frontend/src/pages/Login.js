@@ -36,7 +36,7 @@ const Login = () => {
           <div className="input">
             <input
               type="email"
-              placeholder="E-mail"
+              placeholder="  E-mail"
               name="uemail"
               value={uemail}
               onChange={(event) => setUemail(event.target.value)}
@@ -46,7 +46,7 @@ const Login = () => {
           <div className="input">
             <input
               type="password"
-              placeholder="Password"
+              placeholder="  Password"
               name="upass"
               value={upass}
               onChange={(event) => setUpass(event.target.value)}
@@ -67,11 +67,14 @@ const Login = () => {
           </div>
         </div>
       </form>
-      <div className="submit-container">
-        <Link to="/register">
-          <div className="submit__">Register</div>
-        </Link>
-      </div>
+      
+
+      <div className="forgot-password">
+            Don't have an account? 
+            <Link to="/register">
+              <span>Register</span>
+              </Link>
+          </div>
     </div>
   );
 };

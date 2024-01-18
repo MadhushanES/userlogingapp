@@ -68,7 +68,7 @@ const Registration = () => {
             />
           </div>
           <div className='input1'>
-          <input type="password"  placeholder="Confirm Password" onChange={(event) => setConfirmPassword(event.target.value)} />
+          <input type="password"  placeholder="  Confirm Password" onChange={(event) => setConfirmPassword(event.target.value)} />
 
           </div>
           
@@ -81,12 +81,14 @@ const Registration = () => {
           </div>
         </div>
       </form>
-      <div className='submit-container1'>
-      <Link to={'/'}>      
-      <div className='submit2' >
-        Login
-      </div></Link>
-      </div>
+      
+
+      <div className="forgot-password">
+            Don't have an account? 
+            <Link to="/">
+              <span>Login</span>
+              </Link>
+          </div>
 
     </div>
   );

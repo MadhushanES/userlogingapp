@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './reset.css';
 
 const ResetPassword = () => {
   const [uemail, setUemail] = useState('');
@@ -27,17 +28,21 @@ const ResetPassword = () => {
   };
 
   return (
+    <div className='container'>
     <div>
-      <h2>Reset Password</h2>
-      <div>
-        <label>Email:</label>
-        <input type="email" value={uemail} onChange={(e) => setUemail(e.target.value)} />
+      <h2 className='header1'>Reset Password</h2>
+      <div className='input3'>
+        <label >Email:</label>
+        <input className='input3' type="email" value={uemail} onChange={(e) => setUemail(e.target.value)} />
       </div>
-      <div>
+      <div className='input3'>
         <label>New Password:</label>
-        <input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
+        <input className='input3' type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
       </div>
-      <button onClick={handleResetPassword}>Reset Password</button>
+      <div className='reset'>
+      <button className='reset' onClick={handleResetPassword}>Reset Password</button>
+      </div>
+    </div>
     </div>
   );
 };

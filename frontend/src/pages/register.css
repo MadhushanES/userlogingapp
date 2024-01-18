@@ -59,7 +59,7 @@
 .submit-container1{
     display: flex;
     gap: 30px;
-    margin: 60px auto;
+    margin: 20px auto;
 }
 
 .submit1{
@@ -79,7 +79,7 @@
 .submit2{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
     width: 200px;
     height: 50px;
     color: #fff;
@@ -98,5 +98,4 @@
     height: 100;
     background-color: rgb(207, 217, 224);
     border-radius: 8px;
-
 }
